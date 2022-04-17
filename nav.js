@@ -1,0 +1,52 @@
+const getById = (id) => (document.getElementById(id));
+
+const triggers = document.querySelectorAll('.selectdrop > .drop');
+const background = document.querySelector('.dropdownBackground');
+const nav = document.querySelector('.navbar');
+
+function handleEnter() {
+    this.classList.add('trigger-enter');
+
+    setTimeout(() =>
+        this.classList.contains('trigger-enter')
+        && this.classList.add('trigger-enter-active'), 50);
+
+    background.classList.add('open');
+
+    const dropdown = this.querySelector('.dropdown');
+    const dropdownCoords = dropdown.getBoundingClientRect();
+    const navCoords = nav.getBoundingClientRect();
+    const coords = {
+        height: dropdownCoords.height,
+        width: dropdownCoords.width,
+        top: dropdownCoords.top - navCoords.top,
+        left: dropdownCoords.left - navCoords.left
+    };
+
+    background.style.setProperty('width', `${coords.width}px`);
+    background.style.setProperty('height', `${coords.height}px`);
+    background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+}
+
+function handleLeave() {
+    this.classList.remove('trigger-enter');
+    setTimeout(() => this.classList.remove('trigger-enter-active'), 50);
+    
+    background.classList.remove('open');
+}
+
+triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
+triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+
+const menu = getById('menu');
+const menuDrop = getById('menuDrop');
+
+function openMenu() {
+    menuDrop.classList.replace("menuUnvisible", "menuVisible");
+}
+function closeMenu() {
+    menuDrop.classList.replace("menuVisible", "menuUnvisible");
+}
+
+menu.addEventListener('click', openMenu);
+menu.addEventListener('mouseleave', closeMenu)

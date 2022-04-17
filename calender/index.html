@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalender</title>
+
+    <style>
+    	h1 {
+    		width: 46.4rem;
+    		padding: .8rem 0 .4rem 0;
+    		margin: .8rem auto .5rem auto;
+    		color: rgb(13, 88, 46);
+            font-family: 'Encode Sans SC', sans-serif;
+            font-size: 2.6rem;
+            text-align: center;
+    		text-shadow: 1px 1px 1px #343434;
+            background: rgb(232, 184, 63);
+    		border: 3px solid #0a3e4d;
+    	}
+        table {
+            min-width: 42rem;
+            padding: .16rem .16rem;
+            margin: 0 auto .24rem auto;
+            background: #116177;
+            border: 2px solid #0a3e4d;
+            border-collapse: separate;
+            border-spacing: .24rem;
+        }
+        th, td {
+            width: 6.2rem;
+            height: .9rem;
+            padding: .6rem 0;
+            text-align: center;
+            background: white;
+        }
+        th {
+            font-family: 'Yaldevi', sans-serif;
+            color: rgb(13, 88, 46);
+            font-weight: 900;
+            background: rgb(255, 223, 125);
+            border: 1px solid #825301;
+        }
+        .month {
+            width: 40rem;
+            height: 1.4rem;
+            padding-left: .8rem;
+            color: #670000;
+            font-size: 1.6rem;
+            text-align: left;
+            background: rgb(232, 175, 32);
+        }
+        td {
+        	margin-bottom: 0px;
+            font-family: 'Genos', sans-serif;
+            font-weight: 400;
+            border: 1px solid #343434;
+        }
+        .restdag {
+            color: #585858;
+            font-weight: 300;
+            background: rgb(157, 157, 157);
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Kalender 2022</h1>
+
+        <div class="year" id="fullyear">
+        </div>
+    </main>
+
+    <script>
+        var maanden = [ "januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december" ];
+        var weekDagen = [ "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag" ];
+
+        var aantalDagenInDeMaand = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+        var m; //index for the months
+        var w; //index for the weekdays
+        var d; //index for total days in each month
+
+        var beginDag = 5;
+        // special loop to use all elements in an array, same as array.lenght
+
+        for (m in maanden) {
+            document.write("<table>");
+            document.write("<tr><th class='month' colspan='7'>" + maanden[m] + "</th></tr>");
+            document.write("<tr>");
+            for (w in weekDagen) {
+                document.write("<th>" + weekDagen[w] + "</th>");
+            }
+            document.write("</tr><tr>");
+            var dagTeller = 0; //index for counting days in a week
+            
+            for ((d = 1 - beginDag); d <= aantalDagenInDeMaand[m]; d++) {
+                if (d > 0) {
+                    document.write("<td>" + d + "</td>");
+                } else {
+                    let teller = m - 1;
+                    if (teller < 0) {
+                        teller += 12;
+                    }
+                    var restdag = aantalDagenInDeMaand[teller] - Math.abs(d);
+                    var toonRestdag = "<td class='restdag'>" + restdag + "</td>";
+                    document.write(toonRestdag);
+                } 
+                dagTeller = dagTeller + 1;
+
+                if (dagTeller == 7) {
+                    document.write("</tr><tr>")
+                    dagTeller = 0;
+                } 
+            }          
+            document.write("<tr>");
+            document.write("</table>");
+            beginDag = dagTeller;
+        }
+    </script> 
+</body>
+</html>
