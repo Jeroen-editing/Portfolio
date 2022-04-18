@@ -25,16 +25,14 @@ const createAboutMe = () => {
     const aboutMe_content = `
     <div class="aboutme_box">
         <p>
-            When starting with JavaScript it was the only short moment I doubted if 
-            web-developping was really my thing.I comprehended it (like the best students in the group), 
-            but I struggled with applying it. Luckely I just needed
-            an 'eye-opener' like they say. And DOM event-hanndlings were my trigger I think.
+            In 2019 I had to make a choice in my professional career and after some research I started studying 
+            web development. First in an online course and later on in a fulltime course at Becode and an evening 
+            classes at Encora. 
         </p>
         <p>
-            From that moment I really started to enjoy JavaScript. Now everytime I learn something new or 
-            look something up, I wanne add things or use it for other applications, just to test myself extra. 
-            And because we only learned ES5 in the courses, I'm also learning myself using ES6 better, in every 
-            project I do.
+            I soon discovered that I really like working with JavaScript, so I keep learning and improving myself 
+            in it, by doing online courses and projects. First I did extra ES6 and after that I started with jQuery, 
+            Vue.JS, React.JS, Redux, NodeJS,… 
         </p>
     </div>`;
 
