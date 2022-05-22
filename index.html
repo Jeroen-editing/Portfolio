@@ -9,9 +9,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&family=Dosis:wght@200;300;400;500;600;700;800&family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&family=Genos:wght@100;200;300;400;500;600;700;800;900&family=Sansita+Swashed:wght@500;600;700;800;900&family=Yaldevi:wght@200;300;400;500;600;700&family=Port+Lligat+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;200;300;400;500;600;700;800;900&family=Dosis:wght@200;300;400;500;600;700;800&family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&family=Genos:wght@100;200;300;400;500;600;700;800;900&family=Sansita+Swashed:wght@500;600;700;800;900&family=Yaldevi:wght@200;300;400;500;600;700&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Expletus+Sans:wght@400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Genos:wght@100;200;300;400;500;600;700;800;900&family=Glory:wght@100;200;300;400;500;600;700;800&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
 </head>
 <body>
     <!------NAV----------------------------------------------------------->
@@ -96,40 +97,18 @@
                 </div>
             </section>
         </header>
-        <section class="info_section">
+        <section class="info_section" id="show_info_sect">
             <header class="info_title">
-                <h2>My Personal Info</h2>
+                <h2>About me</h2>
             </header>
             <section class="info_chapters">
-                <article class="chapter" id="getAboutMe">
-                    <header class="chapter_title">
-                        <h3>About me.</h3>
-                    </header>
-                    <section class="chapter_button">
-                        <button>
-                            <img src="assets/icons/arrow_right_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
-                <article class="chapter" id="getStudies">
+                <article class="chapter"  id="getAboutMe">
                     <header class="chapter_title">
                         <h3>
-                            My studies.
+                            Info, Resume & Skills
                         </h3>
                     </header>
-                    <section class="chapter_button">
-                        <button>
-                            <img src="assets/icons/arrow_right_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
-                <article class="chapter" id="getSkills">
-                    <header class="chapter_title">
-                        <h3>
-                            My skills.
-                        </h3>
-                    </header>
-                    <section class="chapter_button">
+                    <section class="aboutMe_button">
                         <button>
                             <img src="assets/icons/arrow_right_green.png" alt="arrow right">
                         </button>
@@ -137,7 +116,7 @@
                 </article>
             </section>
         </section>
-        <section class="proj_section">
+        <section class="proj_section" id="show_proj_sect">
             <header class="proj_title">
                 <h2>My Projects</h2>
             </header>
@@ -180,12 +159,44 @@
                 </article>
             </section>
         </section>
+        <section class="building_section" id="hide_build_sect">
+            <header class="building_title">
+                <h2>Welcome</h2>
+            </header>
+            <section class="building_chapters">
+                <article class="chapter">
+                    <header class="chapter_title">
+                        <h3>
+                            Read Me First !
+                        </h3>
+                    </header>
+                    <section class="chapter_text">
+                        <p class="part_text">
+                            This is a work in progress and not yet fully completed.
+                        </p>
+                        <p class="part_text">
+                            I'm creating it with the principles of the mobile-first design.
+                            <br>
+                            Currently it's suited only for iPhone5 SE. So although it will operate 
+                            perfectly on larger screens, the content won't be aligned correctly yet.
+                        </p>
+                    </section>
+                    <section class="chapter_button" id="continue_btn">
+                        <button>
+                                <h3>
+                                    Continue...
+                                </h3>
+                            <img src="assets/icons/arrow_down_green.png" alt="arrow right">
+                        </button>
+                    </section>
+                </article>
+            </section>
+        </section>
         <section class="pop_up" id="popUp">
-
         </section>
     </main>
 
-    <script src="chapters.js"></script>
+    <script src="aboutMe.js"></script>
     <script src="projects.js"></script>
     <script src="video.js"></script>
 </body>

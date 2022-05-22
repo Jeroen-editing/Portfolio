@@ -18,6 +18,32 @@ const open_projects_chapters = () => {
     let closeProjectsBtn = `<img src="assets/icons/close_green.png" class="close" id="closeProjects">`;
     let projectsClass = `<div class="projects_content">`;
 
+
+    const checkWindowWidth =  () => {
+        let width = window.innerWidth;
+
+        const pcProjects = document.querySelectorAll(".pc_proj");
+        //const multiPcProjects = document.querySelectorAll(".pc_proj_more");
+        const pcLinks = document.querySelectorAll(".pc_link");
+        const multiPcLinks = document.querySelectorAll(".pc_link_more");
+
+        const replace = `<p class="replace_text">Only suitable for laptop or big screen!</p>`;
+
+        if (width < 1280 ) {
+            console.log("yes");
+
+            pcProjects.forEach((item) => {item.style.display = "none";});
+            pcLinks.forEach((item) => {
+                item.innerHTML = replace;
+                //item.style.margin = "0 0";
+            });
+            multiPcLinks.forEach((item) => {item.style.display = "none";});
+
+        } else {
+            console.log("no")
+        }
+    }
+
     const openHtmlCssProjects = () => {
         const htmlCss = new Projects();
 
@@ -40,40 +66,40 @@ const open_projects_chapters = () => {
                 <h4 class="proj_title">Technical info page</h4>
                 <h5 class="proj_subtitle">The basic elements & inline links</h5>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <p class="proj_text">Excercise from the 'freeCodeCamp' portfolio projects.</p>
                 <p class="proj_text">Simple text-element positionings.</p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/technical_docu_page/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
         <div class="proj_box">
             <header class="proj_title_box" id="companyBtn">
-                <h4 class="proj_title">Company / product page</h4>
+                <h4 class="proj_title">Company / product pages</h4>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Woden designs company</h5>
                 <p class="proj_text">Excercise from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">First SASS excersise.</p>
             </section>
-            <footer class="link_box spec_link">
+            <footer class="link_box spec_link pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/challenge-css-sass/index.html"><p class="link">open project</p></a>
             </footer>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Audio company</h5>
                 <p class="proj_text">Excercise from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">Positioning elements.</p>
             </section>
-            <footer class="link_box spec_link">
+            <footer class="link_box spec_link pc_link_more">
                 <a class="proj_link" href="https://jeroen-editing.github.io/challenge-restaurant/"><p class="link">open project</p></a>
             </footer>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Resto</h5>
                 <p class="proj_text">Excercise from the 'freeCodeCamp' portfolio projects</p>
                 <p class="proj_text">Titles, email-input, hyperlinks, photo's, lists,...</p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link_more">
                 <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/product_landing_page/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -82,11 +108,11 @@ const open_projects_chapters = () => {
                 <h4 class="proj_title">Backgrounds & gradients</h4>
                 <h5 class="proj_subtitle">The (old) Apple indexpage</h5>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">With navbar and backgrounds. Positioning elements.</p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/5_backgrounds&gradients/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -94,28 +120,28 @@ const open_projects_chapters = () => {
             <header class="proj_title_box" id="googleBtn">
                 <h4 class="proj_title">Google page</h4>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">First version</h5>
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">The basic structure.</p>
             </section>
-            <footer class="link_box spec_link">
+            <footer class="link_box spec_link pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/google_homepage/theOdinProject_version/index.html"><p class="link">open project</p></a>
             </footer>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Personal version</h5>
                 <p class="proj_text">Based on the prvious excercise.</p>
                 <p class="proj_text">Basic layout with personal graphics.</p>
             </section>
-            <footer class="link_box spec_link">
+            <footer class="link_box spec_link pc_link_more">
                 <a class="proj_link" href="https://jeroen-editing.github.io/google_homepage/my_restyled_version/index.html"><p class="link">open project</p></a>
             </footer>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Second version</h5>
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">Shows suggestions for your favourits and most visited websites.</p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link_more">
                 <a class="proj_link" href="https://jeroen-editing.github.io/google_homepage/my_JS_version/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -124,14 +150,14 @@ const open_projects_chapters = () => {
                 <h4 class="proj_title">New York Times web-page</h4>
                 <h5 class="proj_subtitle">More complex positiong of html elements (flex & grid).</h5>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">
                     Like in most excersise I did, I adapted some personal features.
                     Like text pop-ups with scrolling up or down.
                 </p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/4_positioning/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -140,11 +166,11 @@ const open_projects_chapters = () => {
                 <h4 class="proj_title">Youtube page</h4>
                 <h5 class="proj_subtitle">More complex positioning with hyperlinks, text, lists, navbars,...</h5>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">I added extra JS-functions (like for a hidden navbar,...).</p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/2_youtubepage/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -152,20 +178,20 @@ const open_projects_chapters = () => {
             <header class="proj_title_box" id="formsBtn">
                 <h4 class="proj_title">Forms</h4>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Survey Form</h5>
                 <p class="proj_text">Excercise from the 'freeCodeCamp' portfolio projects.</p>
                 <p class="proj_text">A simple form with some extra styling.</p>
             </section>
-            <footer class="link_box spec_link">
+            <footer class="link_box spec_link pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/survey_form/index.html"><p class="link">open project</p></a>
             </footer>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Contact Form</h5>
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">A more complex form with a pop-up list and some css-animations.</p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link_more">
                 <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/3_form/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -173,7 +199,7 @@ const open_projects_chapters = () => {
             <header class="proj_title_box" id="multipageBtn">
                 <h4 class="proj_title">Multipage websites</h4>
             </header>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Event website</h5>
                 <p class="proj_text">Excercise from the 'Odin project' a full stack internet course.</p>
                 <p class="proj_text">
@@ -181,10 +207,10 @@ const open_projects_chapters = () => {
                     Including all important html elements.
                 </p>
             </section>
-            <footer class="link_box spec_link">
+            <footer class="link_box spec_link pc_link">
                 <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/1_multipage/index.html"><p class="link">open project</p></a>
             </footer>
-            <section class="proj_content">
+            <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Company website</h5>
                 <p class="proj_text">Group-project from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">
@@ -192,7 +218,7 @@ const open_projects_chapters = () => {
                     I made the last page with a double (layerd) form.
                 </p>
             </section>
-            <footer class="link_box">
+            <footer class="link_box pc_link_more">
                 <a class="proj_link" href="https://jeroen-editing.github.io/CHIP/index.html"><p class="link">open project</p></a>
             </footer>
         </div>
@@ -215,6 +241,8 @@ const open_projects_chapters = () => {
         htmlCss.pop_over = `${popoverClass}${htmlCss.getTitle()}${htmlCss.getContent()}</section>`;
 
         pop_over_element.innerHTML = `${htmlCss.getPopover()}`;
+
+        checkWindowWidth();
 
         const close = getById("closeProjects");
         close.addEventListener('click', () => {
