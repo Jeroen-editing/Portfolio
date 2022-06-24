@@ -23,7 +23,7 @@
         <div class="selectdrop">
             <a href="mailto:jdv.editing@gmail.com?subject=Saw your portfolio." class="nav_link gmail drop">
                 <img src="assets/icons/gmail.png" class="icon gmail_icon" alt="gmail logo">
-                <p>contact me</p>
+                <p class="nav_text">contact me</p>
                 <div class="dropdown">
                     <p class="check_out">
                         If you are interested in my work
@@ -34,7 +34,7 @@
             </a>
             <a href="https://github.com/Jeroen-editing" class="nav_link github drop">
                 <img src="assets/icons/github_black.png" class="icon github_icon" alt="github logo">
-                <p>my github</p>
+                <p class="nav_text">my github</p>
                 <div class="dropdown">
                     <p class="check_out">
                         Where all the code is stored.
@@ -44,7 +44,7 @@
             </a>
             <a href="https://www.linkedin.com/in/jeroen-de-vos-39258718b/" class="nav_link linkedin drop">
                 <img src="assets/icons/linkedin.png" class="icon linkedin_icon" alt="LinkedIn logo">
-                <p>my LinkedIn</p>
+                <p class="nav_text">my LinkedIn</p>
                 <div class="dropdown">
                     <p class="check_out">
                         Where you can contact me to
@@ -77,7 +77,7 @@
             -->
         </div>
     </nav>
-    <main class="mainpage">
+    <div class="container">
         <header class="pageHeader">
             <section class="pageTitle">
                 <div>
@@ -87,7 +87,7 @@
                 </div>
                 <div>
                     <h1 class="cv">
-                        C.V. & Portfolio
+                        Portfolio
                     </h1>
                 </div>
             </section>
@@ -97,104 +97,108 @@
                 </div>
             </section>
         </header>
-        <section class="info_section" id="show_info_sect">
-            <header class="info_title">
-                <h2>About me</h2>
-            </header>
-            <section class="info_chapters">
-                <article class="chapter"  id="getAboutMe">
-                    <header class="chapter_title">
-                        <h3>
-                            Info, Resume & Skills
-                        </h3>
-                    </header>
-                    <section class="aboutMe_button">
-                        <button>
-                            <img src="assets/icons/arrow_right_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
+        <main class="mainpage">
+            <section class="info_section box_hidden" id="show_info_sect">
+                <header class="info_title">
+                    <h2>About me</h2>
+                </header>
+                <section class="info_chapters">
+                    <article class="chapter"  id="getAboutMe">
+                        <header class="chapter_title">
+                            <h3>
+                                Info, Resume & Skills
+                            </h3>
+                        </header>
+                        <section class="aboutMe_button">
+                            <button>
+                                <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="about_arrow">
+                            </button>
+                        </section>
+                    </article>
+                </section>
             </section>
-        </section>
-        <section class="proj_section" id="show_proj_sect">
-            <header class="proj_title">
-                <h2>My Projects</h2>
-            </header>
-            <section class="proj_chapters">
-                <article class="chapter" id="getProjects">
-                    <header class="chapter_title">
-                        <h3>
-                            Web Projects.
-                        </h3>
-                    </header>
-                    <section class="chapter_button">
-                        <button>
-                            <img src="assets/icons/arrow_right_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
-                <article class="chapter" id="getVideo">
-                    <header class="chapter_title">
-                        <h3>
-                            Video.
-                        </h3>
-                    </header>
-                    <section class="chapter_button">
-                        <button>
-                            <img src="assets/icons/arrow_right_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
-                <article class="chapter" id="getVCard">
-                    <header class="chapter_title">
-                        <h3>
-                            Vcard.
-                        </h3>
-                    </header>
-                    <section class="chapter_button">
-                        <button>
-                            <img src="assets/icons/arrow_right_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
+            <section class="proj_section box_hidden" id="show_proj_sect">
+                <header class="proj_title">
+                    <h2>My Projects</h2>
+                </header>
+                <section class="proj_chapters">
+                    <article class="chapter" id="getProjects">
+                        <header class="chapter_title">
+                            <h3>
+                                Web Projects.
+                            </h3>
+                        </header>
+                        <section class="chapter_button">
+                            <button>
+                                <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="projects_arrow">
+                            </button>
+                        </section>
+                    </article>
+                    <article class="chapter" id="getVideo">
+                        <header class="chapter_title">
+                            <h3>
+                                Video.
+                            </h3>
+                        </header>
+                        <section class="chapter_button">
+                            <button>
+                                <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="video_arrow">
+                            </button>
+                        </section>
+                    </article>
+                    <article class="chapter" id="getVCard">
+                        <header class="chapter_title">
+                            <h3>
+                                Vcard.
+                            </h3>
+                        </header>
+                        <section class="chapter_button">
+                            <button>
+                                <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="vcard_arrow">
+                            </button>
+                        </section>
+                    </article>
+                </section>
             </section>
-        </section>
-        <section class="building_section" id="hide_build_sect">
-            <header class="building_title">
-                <h2>Welcome</h2>
-            </header>
-            <section class="building_chapters">
-                <article class="chapter">
-                    <header class="chapter_title">
-                        <h3>
-                            Read Me First !
-                        </h3>
-                    </header>
-                    <section class="chapter_text">
-                        <p class="part_text">
-                            This is a work in progress and not yet fully completed.
-                        </p>
-                        <p class="part_text">
-                            I'm creating it with the principles of the mobile-first design.
-                            <br>
-                            Currently it's suited only for iPhone5 SE. So although it will operate 
-                            perfectly on larger screens, the content won't be aligned correctly yet.
-                        </p>
-                    </section>
-                    <section class="chapter_button" id="continue_btn">
-                        <button>
-                                <h3>
-                                    Continue...
-                                </h3>
-                            <img src="assets/icons/arrow_down_green.png" alt="arrow right">
-                        </button>
-                    </section>
-                </article>
+            <section class="building_section box_visible" id="hide_build_sect">
+                <header class="building_title">
+                    <h2>Welcome</h2>
+                </header>
+                <section class="building_chapters">
+                    <article class="chapter">
+                        <header class="chapter_title">
+                            <h3>
+                                Read Me First !
+                            </h3>
+                        </header>
+                        <section class="chapter_text">
+                            <p class="part_text">
+                                This is a work in progress and not yet fully completed.
+                            </p>
+                            <p class="part_text">
+                                I'm creating it with the principles of the mobile-first design.
+                                <br>
+                                Currently it's suited only for iPhone5 SE. So although it will operate 
+                                perfectly on larger screens, the content won't be aligned correctly yet.
+                            </p>
+                        </section>
+                        <section class="chapter_button" id="continue_btn">
+                            <button>
+                                    <h3>
+                                        Continue...
+                                    </h3>
+                                <img src="assets/icons/arrow_down_white.png" alt="arrow right" id="cont_arrow">
+                            </button>
+                        </section>
+                    </article>
+                </section>
             </section>
-        </section>
-        <section class="pop_up" id="popUp">
-        </section>
-    </main>
+            <section class="pop_up box_hidden" id="popUp">
+            </section>
+            <section class="pop_over box_hidden" id="popOver">
+            </section>
+        </main>
+    </div>
 
     <script src="aboutMe.js"></script>
     <script src="projects.js"></script>
