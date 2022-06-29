@@ -31,7 +31,7 @@ class Chapter {
 }
 
 let pop_up_element = getById("popUp");
-let popupClass = `<section class="popup_window">`
+let popupClass = `<section class="popup_window">`;
 let titleClass = `<div class="title_box"><h3 class="chapters_title">`;
 //let closeButton = `<img src="assets/icons/close_green.png" class="close" id="close">`;
 let closeButton = `<section class="close_button" id="close">
