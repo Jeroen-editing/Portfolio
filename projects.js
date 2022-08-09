@@ -15,7 +15,7 @@ const open_projects_chapters = () => {
 
     let pop_over_element = getById("popOver");
     let popoverClass = `<section class="popover_window">`;
-    let projects_titleClass = `<div class="pojects_title_box"><h3 class="projects_title">`;
+    let projects_titleClass = `<div class="projects_title_box"><h3 class="projects_title">`;
     let closeProjectsBtn = `<section class="close_button" id="closeProjects">
                                 <button>
                                     <img src="assets/icons/close_white.png" class="close_x">
@@ -27,27 +27,15 @@ const open_projects_chapters = () => {
     const checkWindowWidth =  () => {
         let width = window.innerWidth;
 
-        //const pcProjects = document.querySelectorAll(".pc_proj");
-        //const multiPcProjects = document.querySelectorAll(".pc_proj_more");
         const pcLinks = document.querySelectorAll(".pc_link");
-        //const multiPcLinks = document.querySelectorAll(".pc_link_more");
-
-        const replace = `<p class="replace_text">Only suitable for laptop or big screen!</p>`;
+        const replace = `<p class="replace_text">Only suitable for laptop / big screen!</p>`;
 
         if (width < 1280 ) {
-            console.log("yes");
-
-            //pcProjects.forEach((item) => {item.style.display = "none";});
             pcLinks.forEach((item) => {
                 item.classList.replace('link_box', 'replace_box');
                 item.innerHTML = '';
                 item.innerHTML = replace;
-                //item.style.margin = "0 0";
             });
-            //multiPcLinks.forEach((item) => {item.style.display = "none";});
-
-        } else {
-            console.log("no")
         }
     }
 
@@ -102,7 +90,7 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
-            <section class="proj_content pc_proj">
+            <section class="proj_content pc_proj proj_middle">
                 <h5 class="proj_subtitle">Audio company</h5>
                 <p class="proj_text">Excercise from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">Positioning elements.</p>
@@ -156,7 +144,7 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
-            <section class="proj_content pc_proj">
+            <section class="proj_content pc_proj proj_middle">
                 <h5 class="proj_subtitle">Personal version</h5>
                 <p class="proj_text">Based on the prvious excercise.</p>
                 <p class="proj_text">Basic layout with personal graphics.</p>
@@ -229,7 +217,7 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
-            <section class="proj_content pc_proj">
+            <section class="proj_content pc_proj proj_bottom">
                 <h5 class="proj_subtitle">Contact Form</h5>
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">A more complex form with a pop-up list and some css-animations.</p>
@@ -259,7 +247,7 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
-            <section class="proj_content pc_proj">
+            <section class="proj_content pc_proj proj_bottom">
                 <h5 class="proj_subtitle">Company website</h5>
                 <p class="proj_text">Group-project from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">
@@ -314,10 +302,10 @@ const open_projects_chapters = () => {
         openHtmlCssProjects();
     });
     showHtmlCss.addEventListener('mouseover', () => {
-        htmlCss_arrow.src = 'assets/icons/arrow_right.png';
+        htmlCss_arrow.src = 'assets/icons/arrow_right_white.png';
     });
     showHtmlCss.addEventListener('mouseout', () => {
-        htmlCss_arrow.src = 'assets/icons/arrow_right_white.png';
+        htmlCss_arrow.src = 'assets/icons/arrow_right.png';
     });
 
 
@@ -377,7 +365,7 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
-            <section class="proj_content">
+            <section class="proj_content proj_bottom">
                 <h5 class="proj_subtitle">Scientific Calculator</h5>
                 <p class="proj_text">Personal (ongoing) Project.</p>
                 <p class="proj_text">Layout rendered with JavaScript. More complex functions.</p>
@@ -411,10 +399,10 @@ const open_projects_chapters = () => {
         openJsProjects()
     });
     showJavaScript.addEventListener('mouseover', () => {
-        js_arrow.src = 'assets/icons/arrow_right.png';
+        js_arrow.src = 'assets/icons/arrow_right_white.png';
     });
     showJavaScript.addEventListener('mouseout', () => {
-        js_arrow.src = 'assets/icons/arrow_right_white.png';
+        js_arrow.src = 'assets/icons/arrow_right.png';
     });
 
 
@@ -507,7 +495,7 @@ const open_projects_chapters = () => {
             </section>
         </div>`;
 
-        fetch.title = `${projects_titleClass}Fetch() method</h3>${closeProjectsBtn}</div>`;
+        fetch.title = `${projects_titleClass}Fetch() projects</h3>${closeProjectsBtn}</div>`;
         fetch.content = `${projectsClass}${fetch_content}</div>`;
         fetch.pop_over = `${popoverClass}${fetch.getTitle()}${fetch.getContent()}</section>`;
 
@@ -528,9 +516,9 @@ const open_projects_chapters = () => {
         openFetchProjects()
     });
     showFetch.addEventListener('mouseover', () => {
-        fetch_arrow.src = 'assets/icons/arrow_right.png';
+        fetch_arrow.src = 'assets/icons/arrow_right_white.png';
     });
     showFetch.addEventListener('mouseout', () => {
-        fetch_arrow.src = 'assets/icons/arrow_right_white.png';
+        fetch_arrow.src = 'assets/icons/arrow_right.png';
     });
 }

@@ -12,10 +12,10 @@ show_intro.addEventListener('click', () => {
     hide_build_sect.classList.replace("box_visible", "box_hidden");
 });
 show_intro.addEventListener('mouseover', () => {
-    cont_arrow.src = 'assets/icons/arrow_down.png';
+    cont_arrow.src = 'assets/icons/arrow_down_white.png';
 });
 show_intro.addEventListener('mouseout', () => {
-    cont_arrow.src = 'assets/icons/arrow_down_white.png';
+    cont_arrow.src = 'assets/icons/arrow_down.png';
 });
 
 class Chapter {
@@ -33,7 +33,6 @@ class Chapter {
 let pop_up_element = getById("popUp");
 let popupClass = `<section class="popup_window">`;
 let titleClass = `<div class="title_box"><h3 class="chapters_title">`;
-//let closeButton = `<img src="assets/icons/close_green.png" class="close" id="close">`;
 let closeButton = `<section class="close_button" id="close">
                         <button>
                             <img src="assets/icons/close_white.png" class="close_x">
@@ -60,13 +59,16 @@ const createAboutMe = () => {
             Vue.JS, React.JS, Redux, NodeJS,…
         </p>
     </div>
-    <div class="resume_box">
+    <div class="resume_box" id="open_resume">
         <div class="resume_title_box">
             <h4 class="resume_title">My resume</h4>
         </div>
         <section class="resume_button">
             <button>
-                <a href="https://jeroen-editing.github.io/mail_templates/cv.html" class="myCv_link">Open</a>
+                <a href="https://jeroen-editing.github.io/mail_templates/cv.html" class="myCv_link">
+                    <p>Open</p>
+                    <img src="assets/icons/arrow_right.png" alt="arrow right" id="resume_arrow">
+                </a>
             </button>
         </section>
     </div>
@@ -134,6 +136,21 @@ const createAboutMe = () => {
         show_info_sect.classList.replace("box_hidden", "box_visible");
         show_proj_sect.classList.replace("box_hidden", "box_visible");
     });
+
+    const small_title = document.querySelector('.chapters_title');
+    small_title.classList.add('small_title');
+
+    const open_resume = getById('open_resume');
+    const resume_arrow = getById('resume_arrow');
+    open_resume.addEventListener('click', () => {
+        window.open("https://jeroen-editing.github.io/mail_templates/cv.html", "_self");
+    });
+    open_resume.addEventListener('mouseover', () => {
+        resume_arrow.src = 'assets/icons/arrow_right_white.png';
+    });
+    open_resume.addEventListener('mouseout', () => {
+        resume_arrow.src = 'assets/icons/arrow_right.png';
+    });
 }
 
 const getAboutMe = getById('getAboutMe');
@@ -145,10 +162,10 @@ getAboutMe.addEventListener('click', () => {
     createAboutMe();
 });
 getAboutMe.addEventListener('mouseover', () => {
-    about_arrow.src = 'assets/icons/arrow_right.png';
+    about_arrow.src = 'assets/icons/arrow_right_white.png';
 });
 getAboutMe.addEventListener('mouseout', () => {
-    about_arrow.src = 'assets/icons/arrow_right_white.png';
+    about_arrow.src = 'assets/icons/arrow_right.png';
 });
 
 
@@ -161,11 +178,12 @@ const createProjects = () => {
         <header class="projects_title_box">
             <div class="title_col">
                 <h4 class="projects_title">HTML & CSS</h4>
-                <h4 class="projects_title">with Sass & Bootstrap</h4>
+                <h5 class="projects_subtitle">& Sass & Bootstrap</h5>
             </div>
             <section class="projects_button">
                 <button>
-                    <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="htmlCss_arrow">
+                    <p>Open</p>
+                    <img src="assets/icons/arrow_right.png" alt="arrow right" id="htmlCss_arrow">
                 </button>
             </section>
         </header>
@@ -175,9 +193,10 @@ const createProjects = () => {
             <div class="title_col">
                 <h4 class="projects_title js_title">JavaScript</h4>
             </div>
-            <section class="projects_button">
+            <section class="projects_button js_button">
                 <button>
-                    <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="js_arrow">
+                    <p>Open</p>
+                    <img src="assets/icons/arrow_right.png" alt="arrow right" id="js_arrow">
                 </button>
             </section>
         </header>
@@ -185,12 +204,13 @@ const createProjects = () => {
     <div class="projects_box bottom_box" id="showFetch">
         <header class="projects_title_box">
             <div class="title_col">
-                <h4 class="projects_title">Fetch() method</h4>
-                <h4 class="projects_title">(for API's)</h4>
+                <h4 class="projects_title">Fetch()</h4>
+                <h5 class="projects_subtitle">method for API's</h5>
             </div>
             <section class="projects_button">
                 <button>
-                    <img src="assets/icons/arrow_right_white.png" alt="arrow right" id="fetch_arrow">
+                    <p>Open</p>
+                    <img src="assets/icons/arrow_right.png" alt="arrow right" id="fetch_arrow">
                 </button>
             </section>
         </header>
@@ -219,91 +239,19 @@ getProjects.addEventListener("click", () => {
     show_proj_sect.classList.replace("box_visible", "box_hidden");
     pop_up_element.classList.replace("box_hidden", "box_visible");
     createProjects();
+    let title = document.querySelector('.title_box');
+    title.classList.add("special_title_box");
 });
 getProjects.addEventListener('mouseover', () => {
-    projects_arrow.src = 'assets/icons/arrow_right.png';
-});
-getProjects.addEventListener('mouseout', () => {
     projects_arrow.src = 'assets/icons/arrow_right_white.png';
 });
-
-
-const createVideo = () => {
-    const video = new Chapter();
-
-    const video_content = `
-    <div class="tv_box">
-        <div class="player" id="video_player">
-            <video class="video_player" id="video" src="assets/video/Company.m4v"></video>
-            <div class="progress">
-                <div class="progress_filled"></div>
-            </div>
-            <div class="player_controls">
-                <div class="slider_box">
-                    <label class="range_labels">
-                        <img class="rangeIcons" src="./assets/icons/volume-2-white.png" alt="">
-                        <input type="range" name="volume" class="player_slider" min="0" max="1" step="0.05" value="O.25" placeholder="volume">
-                    </label>
-                    <label class="range_labels">
-                        <img class="rangeIcons" src="./assets/icons/speed-white.png" alt="">
-                        <input type="range" name="playbackRate" class="player_slider" min="0.5" max="2" step="0.1" value="1" placeholder="speed">
-                    </label>
-                </div>
-                <div class="button_box">
-                    <button data-skip="-10" class="player_button">«10s</button>
-                    <button class="player_button toggle" title="Toggle Play">▶</button>
-                    <button data-skip="10" class="player_button">10s»</button>
-                    <button data-skip="" class="player_button fullscreen"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="tv_text_box">
-        <p class="part_text">
-            I made this video for a presentation in shool (Becode) about film in websites.
-        </p>
-        <p class="part_text middle_text">
-            It's done in 4 hours, with some photos found online and a simple and
-            free editing-program. So it's intentionally not edited with Final Cut Pro 
-            or some of my professional tools.
-        </p>
-        <p class="part_text">
-            The purpose was to show how much more impact even a simple video has 
-            in stead of photos on an indexpage for a company.
-        </p>
-    </div>`;
-
-    video.title = `${titleClass}Video editing</h3>${closeButton}</div>`;
-    video.content = `${tvClass}${video_content}</div>`;
-    video.pop_up = `${popupClass}${video.getTitle()}${video.getContent()}</section>`;
-
-    pop_up_element.innerHTML = `${video.getPopup()}`;
-
-    activateVideo();
-
-    const close = getById("close");
-    close.addEventListener('click', () => {
-        pop_up_element.classList.replace("box_visible", "box_hidden");
-        show_info_sect.classList.replace("box_hidden", "box_visible");
-        show_proj_sect.classList.replace("box_hidden", "box_visible");
-    });
-}
-
-const getVideo = getById("getVideo");
-const video_arrow = getById('video_arrow');
-getVideo.addEventListener("click", () => {
-    show_info_sect.classList.replace("box_visible", "box_hidden");
-    show_proj_sect.classList.replace("box_visible", "box_hidden");
-    pop_up_element.classList.replace("box_hidden", "box_visible");
-    createVideo()
-});
-getVideo.addEventListener('mouseover', () => {
-    video_arrow.src = 'assets/icons/arrow_right.png';
-});
-getVideo.addEventListener('mouseout', () => {
-    video_arrow.src = 'assets/icons/arrow_right_white.png';
+getProjects.addEventListener('mouseout', () => {
+    projects_arrow.src = 'assets/icons/arrow_right.png';
 });
 
+
+
+/*  Video in seperate file !!! */
 
 
 const createVCard = () => {
@@ -370,6 +318,7 @@ const createVCard = () => {
         setInterval(() => {
             vCard_bg.style.background = `url(${BGs[bgIndex]})`;
             vCard_bg.style.backgroundSize = 'cover';
+            vCard_bg.style.transition = 'background .2s ease-in';
             bgIndex = (bgIndex + 1) % BGs.length;
         }, 2600);
     }
@@ -389,11 +338,13 @@ getVCard.addEventListener("click", () => {
     show_info_sect.classList.replace("box_visible", "box_hidden");
     show_proj_sect.classList.replace("box_visible", "box_hidden");
     pop_up_element.classList.replace("box_hidden", "box_visible");
-    createVCard()
+    createVCard();
+    let title = document.querySelector('.title_box');
+    title.classList.add("special_title_box");
 });
 getVCard.addEventListener('mouseover', () => {
-    vcard_arrow.src = 'assets/icons/arrow_right.png';
+    vcard_arrow.src = 'assets/icons/arrow_right_white.png';
 });
 getVCard.addEventListener('mouseout', () => {
-    vcard_arrow.src = 'assets/icons/arrow_right_white.png';
+    vcard_arrow.src = 'assets/icons/arrow_right.png';
 });
