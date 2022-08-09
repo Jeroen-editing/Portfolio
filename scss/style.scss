@@ -87,6 +87,7 @@ body {
     background: white;
     border-bottom: $darkBorder;
     z-index: 10;
+    overflow: visible;
 
     .selectdrop {
         display: flex;
@@ -102,16 +103,16 @@ body {
             flex-direction: row;
             justify-content: flex-start;
             width: 33.3333%;
-            height: 1.2rem;
-            max-height: 1.2rem;
+            height: 1rem;
+            max-height: 1rem;
             margin: 0 0;
-            padding: .2rem 0;
+            padding: .1rem 0;
             text-decoration: none;
 
             .icon {
-                height: 15px;
-                max-height: 15px;
-                margin: .14rem .4rem 0 .4rem;
+                height: 14px;
+                max-height: 14px;
+                margin: .14rem .4rem 0 1.2rem;
                 background: white;
                 border-radius: 3px;
                 opacity: 0;
@@ -124,13 +125,13 @@ body {
                 line-height: 16px;
             }
             .linkedin_icon {
-                height: 17px;
-                max-height: 17px;
+                height: 16px;
+                max-height: 16px;
                 margin: .09rem .4rem 0 .4rem;
             }
             .cv_icon {
-                width: 20px;
-                height: 18px;
+                width: 28px;
+                height: 16px;
                 max-height: 18px;
                 background: transparent;
                 margin: .02rem .4rem 0 .4rem;
@@ -195,10 +196,12 @@ body {
 
         .check_out  {
             color: white;
-            font-size: .8rem;
+            font-family: 'Comfortaa', cursive;
+            font-size: .65rem;
             font-weight: 200;
             letter-spacing: .2rem;
             line-height: 1.3rem;
+            text-align: center;
 
             span {
                 color: $orange;
@@ -2276,9 +2279,6 @@ body {
     }
 }
 @media (min-width: 1280px) {
-    .navbar {
-        background: rgb(255, 255, 255);
-    }
     .page_header .header_content {
         .header_flex {
             .page_title {
@@ -2400,7 +2400,12 @@ body {
         border-left: $darkBorder;
         border-bottom-right-radius: 28px;
         border-bottom-left-radius: 28px;
-        overflow: hidden;
+
+        .selectdrop {
+            border-bottom-right-radius: 28px;
+            border-bottom-left-radius: 28px;
+            overflow: hidden;
+        }
     }
 }
 
