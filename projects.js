@@ -94,7 +94,7 @@ const open_projects_chapters = () => {
                 <h5 class="proj_subtitle">Audio company</h5>
                 <p class="proj_text">Excercise from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">Positioning elements.</p>
-                <footer class="link_box spec_link pc_link">
+                <footer class="link_box">
                     <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/product_landing_page/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
@@ -314,20 +314,22 @@ const open_projects_chapters = () => {
 
         const javaScript_content = `
         <div class="proj_box">
-            <header class="proj_title_box" id="calenderBtn">
-                <h4 class="proj_title">Simple Calender</h4>
+            <header class="proj_title_box" id="dynamicBtn">
+                <h4 class="proj_title">Interactive page</h4>
             </header>
             <section class="proj_content">
-                <h5 class="proj_subtitle">Basic Vanilla JavaScript, not based on JS date functions</h5>
+                <h5 class="proj_subtitle">Funny Vanilla JavaScript tools.</h5>
                 <p class="proj_text">
-                    I've put this simple excercise on my portfolio because I wanne upgrade it soon.
+                    Made with mobile first model.
                 </p>
                 <p class="proj_text">
-                    Now I know how to work with the 'New Date()' method, I can make it work
-                    for all future years.
+                    Interactive tools and JavaSript dynamics.
+                </p>
+                <p class="proj_text">
+                    1 effect only works on laptop or pc. And 1 box is replaced on smaller screens, cuase you need a minimum size for it.
                 </p>
                 <footer class="link_box">
-                    <a class="proj_link" href="/calender/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/interactive_page/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -342,7 +344,7 @@ const open_projects_chapters = () => {
                 <h5 class="proj_subtitle">Simple game with Vanilla JavaScript</h5>
                 <p class="proj_text">Excercise for 'the Odin Project'.</p>
                 <p class="proj_text">JavaScript HTML DOM events.</p>
-                <footer class="link_box">
+                <footer class="link_box pc_link">
                     <a class="proj_link" href="https://jeroen-editing.github.io/Rock_Paper_Scissors/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
@@ -350,7 +352,7 @@ const open_projects_chapters = () => {
                 </footer>
             </section>
         </div>
-        <div class="proj_box bottom_box">
+        <div class="proj_box">
             <header class="proj_title_box" id="calculatorBtn">
                 <h4 class="proj_title">Calculators</h4>
             </header>
@@ -376,6 +378,33 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
+        </div>
+        <div class="proj_box bottom_box">
+            <header class="proj_title_box" id="potfolioBtn">
+                <h4 class="proj_title">Portfolio en resume</h4>
+            </header>
+            <section class="proj_content">
+                <h5 class="proj_subtitle">Build with 80% JavaScript</h5>
+                <p class="proj_text">
+                    If you use the devtools (inspector) you will see that the index 
+                    file only contains a minimum of html. The most parts are added 
+                    with JavaScript.
+                </p>
+                <p class="proj_text">
+                    This way the index page loads verry easy and only the part you 
+                    view will load when you open it.
+                </p>
+                <p class="proj_text">
+                    As you are already on my porfolio, you can always check my resume 
+                    too, as it's build the same way.
+                </p>
+                <footer class="link_box">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/mail_templates/cv.html">
+                        <p class="link_text">Open resume</p>
+                        <p class="link_arrow"></p>
+                    </a>
+                </footer>
+            </section>
         </div>`;
 
         javaScript.title = `${projects_titleClass}JavaScript projects</h3>${closeProjectsBtn}</div>`;
@@ -383,6 +412,8 @@ const open_projects_chapters = () => {
         javaScript.pop_over = `${popoverClass}${javaScript.getTitle()}${javaScript.getContent()}</section>`;
 
         pop_over_element.innerHTML = `${javaScript.getPopover()}`;
+
+        checkWindowWidth();
 
         const close = getById('closeProjects');
         close.addEventListener('click', () => {

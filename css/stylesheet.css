@@ -2015,8 +2015,8 @@ body {
     border-top: 1px solid rgba(13, 90, 107, 0.6); } }
 @media (min-height: 667px) {
   .mainpage .building_section {
-    height: 350px;
-    max-height: 350px;
+    height: 400px;
+    max-height: 400px;
     margin: 6% 0 0 0; }
     .mainpage .building_section .building_chapters .chapter .chapter_text .part_text {
       font-size: .9rem;
