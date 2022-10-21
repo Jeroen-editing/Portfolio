@@ -110,7 +110,7 @@ const createVideo = () => {
     </div>
     <div class="tv_text_box">
         <p class="part_text">
-            I made this video for a presentation in shool (Becode) about film in websites.
+            I made this video for a presentation in school (Becode) about film in websites.
         </p>
         <p class="part_text middle_text">
             It's done in 4 hours, with some photos found online and a simple and
