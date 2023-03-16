@@ -397,7 +397,7 @@ const open_projects_chapters = () => {
         </div>
         <div class="proj_box bottom_box">
             <header class="proj_title_box" id="potfolioBtn">
-                <h4 class="proj_title">Portfolio en resume</h4>
+                <h4 class="proj_title">Resume & this portfolio</h4>
             </header>
             <section class="proj_content">
                 <h5 class="proj_subtitle">Build with 80% JavaScript</h5>
