@@ -84,7 +84,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'Becode', a full stack (practical) course.</p>
                 <p class="proj_text">First SASS excersise.</p>
                 <footer class="link_box spec_link pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/challenge-css-sass/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/Becode/challenge_css&sass/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -101,12 +101,23 @@ const open_projects_chapters = () => {
                     </a>
                 </footer>
             </section>
+            <section class="proj_content pc_proj proj_middle">
+                <h5 class="proj_subtitle">Audio company</h5>
+                <p class="proj_text">Animated companypage.</p>
+                <p class="proj_text">With video and small css-animaions</p>
+                <footer class="link_box">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Companypage/index.html">
+                        <p class="link_text">Open project</p>
+                        <p class="link_arrow"></p>
+                    </a>
+                </footer>
+            </section>
             <section class="proj_content pc_proj">
                 <h5 class="proj_subtitle">Resto</h5>
                 <p class="proj_text">Excercise from the 'freeCodeCamp' portfolio projects</p>
                 <p class="proj_text">Titles, email-input, hyperlinks, photo's, lists,...</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/challenge-restaurant/">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/Becode/challenge_restaurant/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -122,7 +133,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">With navbar and backgrounds. Positioning elements.</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/5_backgrounds&gradients/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/3_backgrounds&gradients/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -138,7 +149,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">The basic structure.</p>
                 <footer class="link_box spec_link pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/google_homepage/theOdinProject_version/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Googlepage/theOdinProject_version/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -149,7 +160,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Based on the prvious excercise.</p>
                 <p class="proj_text">Basic layout with personal graphics.</p>
                 <footer class="link_box spec_link pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/google_homepage/my_restyled_version/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Googlepage/my_restyled_version/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -160,7 +171,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">Shows suggestions for your favourits and most visited websites.</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/google_homepage/my_JS_version/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Googlepage/my_JS_version/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -179,7 +190,7 @@ const open_projects_chapters = () => {
                     Like text pop-ups with scrolling up or down.
                 </p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/4_positioning/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/2_positioning/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -195,7 +206,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">I added extra JS-functions (like for a hidden navbar,...).</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/2_youtubepage/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Youtubepage/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -222,7 +233,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">A more complex form with a pop-up list and some css-animations.</p>
                 <footer class="link_box pc_link_more">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/3_form/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Animated_form/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -271,7 +282,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from 'the Odin project' a full stack internet course.</p>
                 <p class="proj_text">Not only changing the size but also the position of html-elements on deifferent devices.</p>
                 <footer class="link_box">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/6_responsiveness/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/4_responsiveness/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -315,7 +326,7 @@ const open_projects_chapters = () => {
         const javaScript_content = `
         <div class="proj_box">
             <header class="proj_title_box" id="dynamicBtn">
-                <h4 class="proj_title">Interactive page</h4>
+                <h4 class="proj_title">Dynamic page</h4>
             </header>
             <section class="proj_content">
                 <h5 class="proj_subtitle">Funny Vanilla JavaScript tools.</h5>
@@ -329,7 +340,7 @@ const open_projects_chapters = () => {
                     1 effect only works on laptop or pc. And 1 box is replaced on smaller screens, cuase you need a minimum size for it.
                 </p>
                 <footer class="link_box">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/interactive_page/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Dynamic_page/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -345,7 +356,23 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise for 'the Odin Project'.</p>
                 <p class="proj_text">JavaScript HTML DOM events.</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/Rock_Paper_Scissors/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/RockPaperScissors/index.html">
+                        <p class="link_text">Open project</p>
+                        <p class="link_arrow"></p>
+                    </a>
+                </footer>
+            </section>
+        </div>
+        <div class="proj_box">
+            <header class="proj_title_box" id="gameBtn">
+                <h4 class="proj_title">Form - validation</h4>
+            </header>
+            <section class="proj_content">
+                <h5 class="proj_subtitle">Vanilla JavaScript and Regex</h5>
+                <p class="proj_text">Originaly an excercise for 'the Odin Project'.</p>
+                <p class="proj_text">Etended with online study in Regex.</p>
+                <footer class="link_box pc_link">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Form_regex/index.html/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -363,18 +390,7 @@ const open_projects_chapters = () => {
                 <footer class="link_box spec_link">
                     <a class="proj_link" href="">
                         <p class="link_text">Open project</p>
-                        <p class="link_arrow"></p>
-                    </a>
-                </footer>
-            </section>
-            <section class="proj_content proj_bottom">
-                <h5 class="proj_subtitle">Scientific Calculator</h5>
-                <p class="proj_text">Personal (ongoing) Project.</p>
-                <p class="proj_text">Layout rendered with JavaScript. More complex functions.</p>
-                <footer class="link_box">
-                    <a class="proj_link" href="">
-                        <p class="link_text">Open project</p>
-                        <p class="link_arrow"></p>    
+                        <p class="link_arrow">https://jeroen-editing.github.io/JavaScript_projects/Calculator_simple/index.html</p>
                     </a>
                 </footer>
             </section>
@@ -442,9 +458,51 @@ const open_projects_chapters = () => {
 
         const fetch_content = `
         <div class="proj_box">
-            <header class="proj_title_box" id="calenderBtn">
+            <header class="proj_title_box" id="weatherBtn">
+                <h4 class="proj_title">Film Library</h4>
+            </header>
+            <section class="proj_content">
+                <h5 class="proj_subtitle">With 1 simmple fetch</h5>
+                <p class="proj_text">
+                    Scroll to film labrary.
+                </p>
+                <p class="proj_text">
+                    Button avtive/inactive.
+                </p>
+                <footer class="link_box">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/FilmLibrary/index.html">
+                        <p class="link_text">Open project</p>
+                        <p class="link_arrow"></p>
+                    </a>
+                </footer>
+            </section>
+        </div>
+        <div class="proj_box">
+            <header class="proj_title_box" id="weatherBtn">
+                <h4 class="proj_title">Shop price calculator</h4>
+            </header>
+            <section class="proj_content">
+                <h5 class="proj_subtitle">With 1 simmple fetch</h5>
+                <p class="proj_text">
+                    Make an order and calculate the price.<br>
+                    Remove items from order list. And reenter order if needed.
+                </p>
+                <p class="proj_text">
+                    Button avtive/inactive.<br>
+                    Check validity.<br>
+                    Insert table with order.
+                </p>
+                <footer class="link_box">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Shop_pricecalculator/index.html">
+                        <p class="link_text">Open project</p>
+                        <p class="link_arrow"></p>
+                    </a>
+                </footer>
+            </section>
+        </div>
+        <div class="proj_box">
+            <header class="proj_title_box" id="weatherBtn">
                 <h4 class="proj_title">Weather app</h4>
-                
             </header>
             <section class="proj_content">
                 <h5 class="proj_subtitle">With geolacation or when disabled a location input form</h5>
@@ -490,7 +548,7 @@ const open_projects_chapters = () => {
             </section>
         </div>
         <div class="proj_box bottom_box">
-            <header class="proj_title_box" id="calculatorBtn">
+            <header class="proj_title_box" id="smartfridgeBtn">
                 <h4 class="proj_title">Smart Fridge</h4>
             </header>
             <section class="proj_content">
