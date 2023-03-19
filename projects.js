@@ -68,7 +68,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Excercise from the 'freeCodeCamp' portfolio projects.</p>
                 <p class="proj_text">Simple text-element positionings.</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/freeCodeCamp/technical_docu_page/index.html">
+                    <a class="proj_link"href="https://jeroen-editing.github.io/freeCodeCamp/technical_docu_page/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -252,7 +252,7 @@ const open_projects_chapters = () => {
                     Including all important html elements.
                 </p>
                 <footer class="link_box spec_link pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/the_odin_project/Html&Css/1_multipage/index.html">
+                    <a class="proj_link"href="https://jeroen-editing.github.io/the_odin_project/Html&Css/1_multipage/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
@@ -372,7 +372,7 @@ const open_projects_chapters = () => {
                 <p class="proj_text">Originaly an excercise for 'the Odin Project'.</p>
                 <p class="proj_text">Etended with online study in Regex.</p>
                 <footer class="link_box pc_link">
-                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Form_regex/index.html/index.html">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Form_regex/index.html">
                         <p class="link_text">Open project</p>
                         <p class="link_arrow"></p>
                     </a>
