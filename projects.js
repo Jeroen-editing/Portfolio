@@ -381,16 +381,16 @@ const open_projects_chapters = () => {
         </div>
         <div class="proj_box">
             <header class="proj_title_box" id="calculatorBtn">
-                <h4 class="proj_title">Calculators</h4>
+                <h4 class="proj_title">Calculator</h4>
             </header>
             <section class="proj_content">
                 <h5 class="proj_subtitle">Simple Calculator</h5>
                 <p class="proj_text">Excercise for 'the Odin Project'.</p>
                 <p class="proj_text">Html based layout and basic JavaScript.</p>
                 <footer class="link_box spec_link">
-                    <a class="proj_link" href="">
+                    <a class="proj_link" href="https://jeroen-editing.github.io/JavaScript_projects/Calculator_simple/index.html">
                         <p class="link_text">Open project</p>
-                        <p class="link_arrow">https://jeroen-editing.github.io/JavaScript_projects/Calculator_simple/index.html</p>
+                        <p class="link_arrow"></p>
                     </a>
                 </footer>
             </section>
