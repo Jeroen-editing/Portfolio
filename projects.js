@@ -464,7 +464,7 @@ const open_projects_chapters = () => {
             <section class="proj_content">
                 <h5 class="proj_subtitle">With 1 simple fetch</h5>
                 <p class="proj_text">
-                    Scroll to film labrary.
+                    Skip through film library.
                 </p>
                 <p class="proj_text">
                     Button avtive/inactive.
