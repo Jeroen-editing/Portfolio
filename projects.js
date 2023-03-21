@@ -462,7 +462,7 @@ const open_projects_chapters = () => {
                 <h4 class="proj_title">Film Library</h4>
             </header>
             <section class="proj_content">
-                <h5 class="proj_subtitle">With 1 simmple fetch</h5>
+                <h5 class="proj_subtitle">With 1 simple fetch</h5>
                 <p class="proj_text">
                     Scroll to film labrary.
                 </p>
@@ -482,7 +482,7 @@ const open_projects_chapters = () => {
                 <h4 class="proj_title">Shop price calculator</h4>
             </header>
             <section class="proj_content">
-                <h5 class="proj_subtitle">With 1 simmple fetch</h5>
+                <h5 class="proj_subtitle">With 1 simple fetch</h5>
                 <p class="proj_text">
                     Make an order and calculate the price.<br>
                     Remove items from order list. And reenter order if needed.
